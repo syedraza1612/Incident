@@ -1,1 +1,61 @@
+#main {
+	padding: 10px;
+    background: #3e3e3e;
+    color: white !important;
+}
 
+.text-center {
+	text-align: center; /*style for align the text on the center*/
+}
+
+.text-right {
+	text-align: right; /*style for align the text on the right*/
+}
+
+table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd, table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.even, table.dataTable.display tbody tr.odd>.sorting_1, table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
+    background-color: #3e3e3e; /*the background color for the table*/
+}
+
+table.dataTable.display tbody tr.even>.sorting_1, table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
+    background-color: #3e3e3e; /*the background color for the table*/
+}
+
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+    color: #fff; /*adding white color*/
+}
+
+#myTable_filter, #myTable_length, #myTable_info, #myTable_paginate {
+	display: none;
+}
+
+table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
+    background-color: #282828 !important; /*on hover changing color*/
+}
+
+table.dataTable.display tbody tr:hover>.sorting_1, table.dataTable.order-column.hover tbody tr:hover>.sorting_1 {
+	background-color: #282828 !important; /*on hover changing color*/
+}
+
+@media screen and (max-width: 600px) {
+	tr.odd td:last-child, tr.even td:last-child {
+		border-bottom: 1px solid white !important; /*added media query for showing list under 600 px*/
+	}
+
+	.align-disable {
+		text-align: unset; /*disabling algin style on list*/
+	}
+
+	td {
+		display: block !important;
+		width: 100%;
+		border: none !important;
+	} /*adding styles to tables data cells element*/
+
+	thead tr th:nth-child(1), thead tr th:nth-child(2), thead tr th:nth-child(5) {
+		display: none !important;
+	}
+
+	.date, .sorting_1 {
+		width: 250px !important; /*adding specific width*/
+	}
+}	
