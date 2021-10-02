@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html>
 
+	<head>
+		<meta charset="utf-8">
+		<title>Incidents</title>
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+		<!-- imported jQuer datatables -->
+		<link rel="stylesheet" type="text/css" href="./src/css/style.css">
+		<!-- link of the css file for the style sheet -->
+	</head>
+
+	<body>
+		<div id="main">
+			<h3>Incidents</h5>
+				<table id="myTable" class="display" style="width: 100%;">
+					<!-- code for the html tables (the headings you see on the table) -->
+					<thead>
+						<tr>
+							<th></th>
+							<th>Incident</th>
+							<th>Date & Time</th>
+							<th>Priority</th>
+							<th>Location Name</th>
+						</tr>
+					</thead>
+					<tbody id="incidents">
+						<!-- calling js function through id, the code of the function you can see in the javascript below -->
+					</tbody>
+				</table>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- core js files -->
+		<script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+		<!-- core js files -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js">
+		</script> 
+		<!-- core js files -->
+		<script type="module" src="index.js"></script>
+
+
+		<!-- Getting all the incidents from the API. Set conditions for the priority and also removed the duplicated incidents. By using js datatables it can show the results according to ascending / descending 
+	Also set the date and time using js function and displayed date and time. For showing the list below 600px, i have added media queries in the style.css files you see it aswell. On hovering each row the background colour also changing -->
+
+
+	</body>
+
+</html>
